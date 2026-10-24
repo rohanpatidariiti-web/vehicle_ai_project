@@ -1,0 +1,8 @@
+# Optimized ByteTrack configuration for Traffic Surveillance
+tracker_type: bytetrack
+track_high_thresh: 0.30  # High confidence first-stage association
+track_low_thresh: 0.10   # Low confidence second-stage association (handles blur/occlusion)
+new_track_thresh: 0.45   # Threshold to initialize a new track (avoids false-positive phantom IDs)
+track_buffer: 60         # Retain lost tracks for 60 frames (~2.5s at 24fps) through vehicle occlusions
+match_thresh: 0.75       # IoU cost threshold for matching
+fuse_score: True         # Fuse detection confidence with motion cost

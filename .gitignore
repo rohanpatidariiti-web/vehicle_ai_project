@@ -1,0 +1,30 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# IDE & Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large generated outputs (keep original demo video, ignore generated outputs)
+*_counted.mp4
+sample_output_frame.jpg
+
+# Ignore intermediate model weights and base pretrained weights
+yolov8s.pt
+**/weights/last.pt
+
+# Operating System Files
+.DS_Store
+Thumbs.db
